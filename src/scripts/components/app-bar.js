@@ -18,18 +18,20 @@ class AppBar extends HTMLElement {
           box-sizing: border-box;
         }
         :host {
-          display: block;
-          width: 100%;
-          background-color: cornflowerblue;
-          color: white;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          background-color: transparent;
+          color: black;
+          text-align: center;
+          border-radius: 50px;
+          background: linear-gradient(145deg, #f0f0f0, #cacaca);
+          box-shadow:  20px 20px 60px #bebebe,
+                      -20px -20px 60px #ffffff;
         }
         h2 {
-          padding: 16px;
+          padding: 1.5em;
         }
       </style>
 
-      <h2>Club Finder</h2>
+      <h2>Joke Generator</h2>
     `;
   }
 }
