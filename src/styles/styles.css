@@ -1,0 +1,9 @@
+/* footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--primary-color);
+  padding: 2.5em;
+
+  background-color: var(--secondary-color);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
