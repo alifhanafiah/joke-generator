@@ -1,7 +1,6 @@
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'development',
@@ -22,7 +21,6 @@ module.exports = merge(common, {
     ],
   },
   plugins: [
-    new ESLintPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',

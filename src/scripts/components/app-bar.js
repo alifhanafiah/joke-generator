@@ -20,18 +20,13 @@ class AppBar extends HTMLElement {
         :host {
           background-color: transparent;
           color: black;
-          text-align: center;
-          border-radius: 50px;
-          background: linear-gradient(145deg, #f0f0f0, #cacaca);
-          box-shadow:  20px 20px 60px #bebebe,
-                      -20px -20px 60px #ffffff;
         }
-        h2 {
+        h4 {
           padding: 1.5em;
         }
       </style>
 
-      <h2>Joke Generator</h2>
+      <h4>Joke Generator</h4>
     `;
   }
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700;900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -7,19 +9,59 @@
 }
 
 html {
-  background-image: url(../assets/flat-mountains.svg);
+  background-image: url(../assets/blob-scene-haikei.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  overflow-x: hidden;
 }
 
 body {
   min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+main {
+  margin-block: 4em;
+}
+
+.hero__title {
+  margin-block-end: 0.5em;
+}
+
+.hero__desc {
+  font-weight: 300;
+  margin-block-end: 0.5em;
+}
+
+button {
+  border: none;
+  border-radius: 1em;
+  padding: 1em 2.5em;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: transparent;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 /* footer */
 footer {
+  position: absolute;
+  inset: auto 0 0 0;
   color: black;
   padding: 2.5em;
+  font-size: small;
 }
