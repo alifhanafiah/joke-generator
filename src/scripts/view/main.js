@@ -8,7 +8,7 @@ const main = () => {
       const responseData = await response.data;
 
       if (responseData.error) {
-        showResponseMessage(error);
+        showResponseMessage(responseData.error);
       } else {
         renderJoke(responseData);
       }
