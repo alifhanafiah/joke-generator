@@ -4,21 +4,18 @@
     "es2021": true,
     "node": true
   },
-  "extends": "eslint:recommended",
+  "extends": ["airbnb", "airbnb/hooks", "eslint:recommended"],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "rules": {
-    // enable additional rules
-    "indent": ["error", 2],
     "linebreak-style": ["error", "windows"],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"],
-
-    // override configuration set by extending "eslint:recommended"
-    "no-empty": "warn",
-    "no-cond-assign": ["error", "always"]
+    "import/extensions": ["error", "always"],
+    "no-underscore-dangle": "off",
+    "no-alert": "off",
+    "no-console": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
   }
 }

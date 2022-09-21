@@ -2,20 +2,6 @@ const axios = require('axios').default;
 
 const main = () => {
   const baseUrl = 'https://v2.jokeapi.dev/joke/Programming,Dark,Pun';
-  const getJoke = async () => {
-    try {
-      const response = await axios.get(`${baseUrl}`);
-      const responseData = await response.data;
-
-      if (responseData.error) {
-        showResponseMessage(responseData.error);
-      } else {
-        renderJoke(responseData);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
   const renderJoke = (jokeObject) => {
     const jokeSetup = document.querySelector('#joke-setup');
@@ -31,6 +17,21 @@ const main = () => {
 
   const showResponseMessage = (message = 'Check your internet connection') => {
     alert(message);
+  };
+
+  const getJoke = async () => {
+    try {
+      const response = await axios.get(`${baseUrl}`);
+      const responseData = await response.data;
+
+      if (responseData.error) {
+        showResponseMessage(responseData.error);
+      } else {
+        renderJoke(responseData);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   document.addEventListener('DOMContentLoaded', () => {
