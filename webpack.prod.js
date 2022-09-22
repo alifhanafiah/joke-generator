@@ -48,6 +48,7 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.[contenthash].html',
+      favicon: './src/favicon.png',
     }),
   ],
 });
