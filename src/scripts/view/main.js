@@ -33,6 +33,7 @@ const main = () => {
   const getJoke = async () => {
     try {
       displayLoading();
+
       const response = await axios.get(`${baseUrl}`);
       const responseData = await response.data;
 
